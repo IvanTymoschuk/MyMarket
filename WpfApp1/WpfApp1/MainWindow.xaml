@@ -18,12 +18,12 @@
                 <ColumnDefinition></ColumnDefinition>
                 <ColumnDefinition></ColumnDefinition>
             </Grid.ColumnDefinitions>
-            <TextBox TextAlignment="Center" Name="tbCode" FontSize="35"></TextBox>
-            <TextBox TextAlignment="Center" Grid.Column="1" Name="tbAmount" FontSize="35" Text="1"></TextBox>
+            <TextBox TextAlignment="Center" Name="tbCode" FontSize="35"  PreviewTextInput="NumberValidationTextBox"></TextBox>
+            <TextBox TextAlignment="Center" Grid.Column="1" Name="tbAmount" FontSize="35" Text="1" PreviewTextInput="NumberValidationTextBox"></TextBox>
             <Button Grid.Column="2" FontSize="35" Click="Button_Click">+</Button>
         </Grid>
         
-        <ListBox Grid.Row="1" Name="listbox"></ListBox>
+        <ListBox Margin="25" FontSize="15" Grid.Row="1" Name="listbox"></ListBox>
 
         <Label FontSize="35" Grid.Row="2" >Total price:</Label>
         <Label FontSize="35" Grid.Row="2" Name="lblPrice" HorizontalAlignment="Right"></Label>
